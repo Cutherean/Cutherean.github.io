@@ -7,17 +7,19 @@
 
 	<title>Personal Website</title>
 
-	<!-- Google Fonts -->
+	<!-- google fonts -->
 	<link rel="stylesheet"
 		href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i">
-
-	<!-- libraries -->
+	<!-- css libraries -->
 	<link rel="stylesheet" href="libraries/bootstrap/css/bootstrap.min.css">
 	<link rel="stylesheet" href="libraries/icofont/icofont.min.css">
 	<link rel="stylesheet" href="libraries/boxicons/css/boxicons.min.css">
-
 	<!-- styles -->
 	<link rel="stylesheet" href="styles/styles.css">
+	<!-- script libraries -->
+	<script type="text/javascript" src="libraries/jquery/jquery.min.js"></script>
+	<!-- scripts-->
+	<script type="text/javascript" src="scripts/personalWebsite.js"></script> 
 
 </head>
 
@@ -27,17 +29,18 @@
 		<div class="d-flex flex-column">
 
 			<div class="profile">
-				<img src="" alt="" class="img-fluid rounded-circle">
+				<img src="images/pfp.png" alt="" class="img-fluid rounded-circle">
 				<h1 class="text-light"><a href="index.html">Andrew Zhang</a></h1>
 				<div class="social-links mt-3 text-center">
-					<a href="#" target="_blank" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+					<a href="https://www.linkedin.com/in/andy-zhang-b486a8236/" target="_blank" class="linkedin"><i
+							class="bx bxl-linkedin"></i></a>
 					<a href="https://github.com/Cutherean" target="_blank" class="github"><i class="bx bxl-github"></i></a>
 				</div>
 			</div>
 
 			<nav class="nav-menu">
 				<ul>
-					<li><a href="index.html"><i class="bx bx-home"></i><span>Home</span></a></li>
+					<li class="active"><a href="index.html"><i class="bx bx-home"></i><span>Home</span></a></li>
 					<li><a href="#about"><i class="bx bx-user"></i><span>About</span></a></li>
 					<li><a href="#CV"><i class="bx bx-file-blank"></i><span>CV</span></a></li>
 					<li><a href="#projects"><i class="bx bx-book-content"></i>Personal Projects</a></li>
@@ -64,7 +67,9 @@
 			<div class="container">
 				<div class="section-title">
 					<h2>About</h2>
-					<p>filler text. not sure what to put yet</p>
+					<p>Welcome to my personal website! I am currently an undergraduate studying computer engineering at
+						University of New Mexico and will be graduating by May 2022. I am interested in full stack development but
+						open to any developer	opportunities.</p>
 				</div>
 			</div>
 		</section>
@@ -75,6 +80,7 @@
 
 				<div class="section-title">
 					<h2>CV</h2>
+					<p>work in progress</p>
 				</div>
 
 				<div class="embed-responsive">
@@ -118,7 +124,7 @@
 						<div class="card h-100">
 							<div class="card-body d-flex flex-column">
 								<h5 class="card-title">Project Title Filler</h5>
-								<p class="card-text">Project description filler.</p>
+								<p class="card-text">Project description filler just so it fills up the row.</p>
 								<a href="#" target="_blank" class="btn btn-primary mt-auto">Link to app</a>
 							</div>
 						</div>
@@ -148,7 +154,7 @@
 						<p>+1 (505) 412 - 3928</p>
 					</div>
 				</div>
-				
+
 			</div>
 		</section>
 	</main>
@@ -157,10 +163,11 @@
 	<footer id="footer">
 		<div class="container">
 			<div class="credits">
-				Design referenced from <a
-					href="https://bootstrapmade.com/iportfolio-bootstrap-portfolio-websites-template/">BootstrapMade</a>
+				Design referenced from <a href="https://bootstrapmade.com/iportfolio-bootstrap-portfolio-websites-template/"
+					target="_blank">BootstrapMade</a>
 			</div>
 		</div>
 	</footer>
 </body>
+
 </html>
