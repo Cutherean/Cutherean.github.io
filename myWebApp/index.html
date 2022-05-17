@@ -7,16 +7,25 @@
 	<link rel="stylesheet" type="text/css" href="downloaded_libraries/fonts.css" />
 	<!-- styles -->
 	<link rel="stylesheet" type="text/css" href="styles/styles.css" />
+	<!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"> -->
+	<link rel="stylesheet" type="text/css" href="downloaded_libraries/bootstrap.min.css">
+
 	<!-- libraries -->
 
-	<script src="https://d3js.org/d3.v3.min.js"></script>
-	<!-- <script src="downloaded_libraries/d3.v3.min.js"></script> -->
-	
+	<!-- <script src="https://d3js.org/d3.v3.min.js"></script> -->
+	<script src="downloaded_libraries/d3.v3.min.js"></script>
+
 	<!-- <script src="https://d3js.org/queue.v1.min.js"></script> -->
 	<script src="downloaded_libraries/queue.v1.min.js"></script>
 
 	<!-- <script src="https://d3js.org/topojson.v1.min.js"></script> -->
 	<script src="downloaded_libraries/topojson.v1.min.js"></script>
+
+	<!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+		crossorigin="anonymous"></script> -->
+	<script src="downloaded_libraries/bootstrap.bundle.min.js"></script>
+
 
 	<!-- scripts -->
 	<script type="text/javascript" src="scripts/map.js"></script>
@@ -26,10 +35,44 @@
 	<!-- Create an element where the map will take place -->
 	<div id="content">
 		<h1>Internet Usage: 1960 - 2020</h1>
+		<button type="button" class="btn btn-default float-end" data-bs-toggle="modal" data-bs-target="#about">
+			About
+		</button>
 		<h2 class="year"></h2>
 		<div class="slider"></div>
 		<div id="map"></div>
 		<p>Source: Our World in Data.</p>
+	</div>
+
+	<!-- Modal -->
+	<div class="modal fade" id="about" tabindex="-1" aria-labelledby="about-title" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title" id="about-title">About</h5>
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+				</div>
+				<div class="modal-body">
+					<strong>About the Project</strong>
+					<p>This web map is a choropleth map used to show Internet usage over time.</p>
+					<p>The data used in this map is modified from the original source. Many countries such as Taiwan and
+						Antarctica were not present in the map and would not load properly with the topoJSON file. Additionally, the
+						data would show 0 for years with no data instead of an alternate placeholder. To remedy both of these, a
+						Python script was used.</p>
+					<strong>Contributors</strong>
+					<p><a href="https://www.lipingyang.org" target="_blank">Dr. Liping Yang</a> (Project Supervisor)</p>
+					<p><a href="https://github.com/Cutherean" target="_blank">Andrew Zhang</a> (ajzhang1998@gmail.com)</p>
+					<strong>Acknowledgements</strong>
+					<p><a href="https://www.kaggle.com/datasets/syedjaferk/individuals-using-the-internet-of-population"
+							target="_blank">Interet Usage Data</a></p>
+					<p><a href="http://bl.ocks.org/dougdowson/9832019" target="_blank">Choropleth Map with Time Slider</a>
+					</p>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+				</div>
+			</div>
+		</div>
 	</div>
 </body>
 
